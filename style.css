@@ -1,0 +1,76 @@
+/*====> Global <======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  line-height: 1.5;
+  position: relative;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 69px;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+.model-button {
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+}
+.model {
+  width: 50%;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  position: absolute;
+  background-color: #ffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close {
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+}
+.model h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.model p {
+  font-size: 1.8rem;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+}
+.hidden {
+  display: none;
+}
